@@ -1,0 +1,25 @@
+using System;
+using System.Globalization;
+
+namespace Logica1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Title = "While";
+            int soma = 0;
+            Console.WriteLine("Digite a seqência de números a serem somados: ");
+            int num=int.Parse(Console.ReadLine());
+            while (num != 0)
+            {
+                soma = soma + num;
+                num = int.Parse(Console.ReadLine());
+                
+            }
+            Console.Clear(); Console.WriteLine("A soma dos números digitados é: " + soma);
+            Console.ReadLine();
+          
+        }
+    }
+}
