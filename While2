@@ -1,0 +1,32 @@
+using System;
+
+
+namespace Logica1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string[] num = Console.ReadLine().Split(' ');
+            int x = int.Parse(num[0]);
+            int y = int.Parse(num[1]);
+            
+           while(x != y)
+            {
+                if (x < y)
+                {
+                    Console.WriteLine("Crescente");
+                }
+                else
+                {
+                    Console.WriteLine("Decrescente");
+                }
+                num = Console.ReadLine().Split(' ');
+                 x = int.Parse(num[0]);
+                 y = int.Parse(num[1]);
+
+            }
+            Console.Read();
+        }
+    }
+}
